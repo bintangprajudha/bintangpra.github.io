@@ -1,0 +1,40 @@
+body {
+    min-width: 650px;
+}
+
+.main {
+    margin: 72px  0 auto;
+    text-align: center;
+}
+
+.container-img {
+    display: flex;
+    margin: 0 auto;
+    width: 620px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+img {
+    margin-bottom: 5px;
+}
+
+.thumb:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.active {
+    opacity: 0.5;
+}

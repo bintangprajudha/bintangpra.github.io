@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(135deg, #e63946, #1d3557);
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.todo {
+    width: 540px;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.todo h2 {
+    color: #051835;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.inp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(214, 211, 211);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    cursor: text;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #e63946;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background-image: url(circle.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 9px;
+    left: 8px;
+}
+
+.check {
+    text-decoration: line-through;
+}
+
+.check::before {
+    background-image: url(check.jpg);
+}
+
+span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
+
+span:hover {
+    background-color: rgb(214, 211, 211);
+}
+
+.btn {
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    margin: 0 10px;
+}
+
+.img-btn {
+    padding: 7px;
+    box-sizing: border-box;
+}
